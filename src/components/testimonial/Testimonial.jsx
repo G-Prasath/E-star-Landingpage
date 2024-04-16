@@ -14,6 +14,8 @@ const Testimonial = () => {
         <div className="swiper">
           {/* <!-- Additional required wrapper --> */}
           <div className="swiper-wrapper">
+
+
             {/* <!-- Slides --> */}
             <div className="swiper-slide">
               <div className="client__card">
@@ -33,6 +35,8 @@ const Testimonial = () => {
                 </p>
               </div>
             </div>
+            
+
             <div className="swiper-slide">
               <div className="client__card">
                 <img src="assets/client-2.jpg" alt="client" />
@@ -51,6 +55,7 @@ const Testimonial = () => {
                 </p>
               </div>
             </div>
+
             <div className="swiper-slide">
               <div className="client__card">
                 <img src="assets/client-3.jpg" alt="client" />
@@ -69,6 +74,7 @@ const Testimonial = () => {
                 </p>
               </div>
             </div>
+
             <div className="swiper-slide">
               <div className="client__card">
                 <img src="assets/client-4.jpg" alt="client" />
@@ -87,6 +93,7 @@ const Testimonial = () => {
                 </p>
               </div>
             </div>
+
             <div className="swiper-slide">
               <div className="client__card">
                 <img src="assets/client-5.jpg" alt="client" />
@@ -105,6 +112,8 @@ const Testimonial = () => {
                 </p>
               </div>
             </div>
+
+
           </div>
         </div>
       </div>

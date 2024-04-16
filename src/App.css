@@ -71,6 +71,8 @@ ul {
 html,
 body {
   scroll-behavior: smooth;
+  background-color: #f5f6f8;
+  overflow-x: hidden;
 }
 
 body {

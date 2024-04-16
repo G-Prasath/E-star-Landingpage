@@ -4,20 +4,22 @@ import './App.css'
 import ServiceCard from './components/serviceCard/ServiceCard'
 import Offers from './components/offers/Offers'
 import About from './components/about/About'
-import Testimonial from './components/testimonial/Testimonial'
+// import Testimonial from './components/testimonial/Testimonial'
 import Footer from './components/footer/Footer'
+import Team from './components/team/Team'
 
 const App = () => {
   return (
     <div>
       <Navbar />
-      <About/>
+      <About />
       <ServiceCard />
-      <Offers />
+      {/* <Offers /> */}
       {/* <Testimonial/> */}
-      <Footer/>
+      <Team/>
+      <Footer />
     </div>
-  )
+  );
 }
 
 export default App

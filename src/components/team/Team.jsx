@@ -138,7 +138,6 @@ const Team = () => {
             </div>
           </Reveal>
 
-          <Reveal duration={0.55} delay={0.11}>
             {/* ---------- Card Four -------  */}
             <div className="team-cart">
               <div className="img-box">
@@ -162,9 +161,7 @@ const Team = () => {
                 </div>
               </div>
             </div>
-          </Reveal>
 
-          <Reveal duration={0.65} delay={0.12}>
             {/* ---------- Card Five -------  */}
             <div className="team-cart">
               <div className="img-box">
@@ -188,7 +185,6 @@ const Team = () => {
                 </div>
               </div>
             </div>
-          </Reveal>
         </Slider>
       </div>
     </>

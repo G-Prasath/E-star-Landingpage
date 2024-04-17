@@ -5,6 +5,8 @@
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  width: 100%;
+  aspect-ratio: 16 / 9;
 }
 
 nav {
@@ -67,7 +69,7 @@ nav {
 
 .header__container h1 {
   margin-bottom: 1rem;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
   color: #fff;
   text-align: center;
@@ -182,8 +184,17 @@ nav {
 
   .header {
     padding-top: 0;
-    height: 100vh;
+    width: 100%;
+    aspect-ratio: 16 / 9;
   }
+
+  .header__container h1 {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+}
 
   .booking {
     max-width: 100%;

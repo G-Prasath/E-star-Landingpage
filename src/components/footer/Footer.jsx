@@ -1,5 +1,11 @@
-import React from 'react'
-import './Footer.css'
+import React from "react";
+import "./Footer.css";
+
+import { CiFacebook } from "react-icons/ci";
+import { CiLinkedin } from "react-icons/ci";
+import { CiInstagram } from "react-icons/ci";
+import { FaXTwitter } from "react-icons/fa6";
+import { ImPinterest2 } from "react-icons/im";
 
 const Footer = () => {
   return (
@@ -11,7 +17,7 @@ const Footer = () => {
               <img src="assets/logo.png" alt="logo" />
             </a>
           </div>
-          <p>
+          <p className="footer_para">
             Explore the world with ease and excitement through our comprehensive
             travel platform. Your journey begins here, where seamless planning
             meets unforgettable experiences.
@@ -19,21 +25,32 @@ const Footer = () => {
           <ul className="footer__socials">
             <li>
               <a href="#">
-                <i className="ri-facebook-fill"></i>
+                <ImPinterest2 color="#112b5a" fontSize={20} />
               </a>
             </li>
             <li>
               <a href="#">
-                <i className="ri-instagram-line"></i>
+                <FaXTwitter color="#112b5a" fontSize={20} />
               </a>
             </li>
             <li>
               <a href="#">
-                <i className="ri-youtube-line"></i>
+                <CiInstagram color="#112b5a" fontSize={25} />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <CiLinkedin color="#112b5a" fontSize={25} />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <CiFacebook color="#112b5a" fontSize={25} />
               </a>
             </li>
           </ul>
         </div>
+
         <div className="footer__col">
           <h4>Quick Links</h4>
           <ul className="footer__links">
@@ -93,6 +110,6 @@ const Footer = () => {
       </div>
     </footer>
   );
-}
+};
 
-export default Footer
+export default Footer;

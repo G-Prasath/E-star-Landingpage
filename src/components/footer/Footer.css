@@ -1,6 +1,6 @@
 /* Footer  */
 .footer {
-  background-color: var(--primary-color-dark);
+  background-color: #fff;
 }
 
 .footer__container {
@@ -10,7 +10,11 @@
 
 .footer__col p {
   margin-block: 2rem;
-  color: var(--white);
+  color: #000;
+}
+.footer_para{
+  font-weight: 500;
+  line-height: 25px;
 }
 
 .footer__socials {
@@ -21,24 +25,21 @@
 }
 
 .footer__socials a {
-  padding: 5px 10px;
-  font-size: 1.25rem;
-  color: var(--primary-color);
-  background-color: var(--white);
+  /* padding: 5px 10px; */
   border-radius: 100%;
   transition: 0.3s;
 }
 
-.footer__socials a:hover {
-  color: var(--white);
+/* .footer__socials a:hover {
+  color: #000;
   background-color: var(--primary-color);
-}
+} */
 
 .footer__col h4 {
   margin-bottom: 2rem;
   font-size: 1.2rem;
   font-weight: 600;
-  color: var(--white);
+  color: #000;
 }
 
 .footer__links {
@@ -50,7 +51,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  color: var(--white);
+  color: #000;
   transition: 0.3s;
 }
 
@@ -70,25 +71,25 @@
 .footer__col input {
   padding: 0.75rem;
   font-size: 1rem;
-  color: var(--white);
+  color: #000;
   background: transparent;
-  border: 1px solid var(--white);
+  border: 1px solid #000;
   border-radius: 5px;
 }
 
 .footer__col input::placeholder {
-  color: var(--white);
+  color: #000;
 }
 
 .footer__col .btn:hover {
   color: var(--primary-color);
-  background-color: var(--white);
+  background-color: #000;
 }
 
 .footer__bar {
   padding: 1rem;
   font-size: 0.8rem;
-  color: var(--white);
+  color: #000;
   text-align: center;
 }
 

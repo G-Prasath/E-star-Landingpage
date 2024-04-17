@@ -38,7 +38,7 @@
   padding: 0.75rem 2rem;
   font-size: 1rem;
   color: #fff;
-  background-color: #5484dd;
+  background-color: #112b5a;
   outline: none;
   border: none;
   border-radius: 2px;
@@ -48,7 +48,7 @@
 }
 
 .btn:hover {
-  background-color: #112b5a;
+  background-color: #1e3a6d;
 }
 
 img {

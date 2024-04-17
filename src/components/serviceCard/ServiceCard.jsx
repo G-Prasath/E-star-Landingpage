@@ -17,12 +17,11 @@ const ServiceCard = () => {
         <Reveal delay={0.6} duration={0.6}>
           <div className="service__card">
             <LazyLoadImage
-              effect="blur"
               src="assets/warehouse.jpg"
               alt="service"
               className="service_card_img"
-              width="500px"
-              height="150px"
+              // width="500px"
+              // height="150px"
             />
             <div>
               <div>
@@ -41,12 +40,11 @@ const ServiceCard = () => {
         <Reveal delay={0.7} duration={0.6}>
           <div className="service__card">
             <LazyLoadImage
-              effect="blur"
               src="assets/manufacturing.jpg"
               alt="service"
               className="service_card_img"
-              width="500px"
-              height="150px"
+              // width="500px"
+              // height="150px"
             />
             <div>
               <div>
@@ -65,12 +63,11 @@ const ServiceCard = () => {
         <Reveal delay={0.8} duration={0.6}>
           <div className="service__card">
             <LazyLoadImage
-              effect="blur"
               src="assets/auditorium.jpg"
               alt="service"
               className="service_card_img"
-              width="500px"
-              height="150px"
+              // width="500px"
+              // height="150px"
             />
             <div>
               <div>
@@ -89,12 +86,11 @@ const ServiceCard = () => {
         <Reveal delay={0.9} duration={0.6}>
           <div className="service__card">
             <LazyLoadImage
-              effect="blur"
               src="assets/factory-shed.jpg"
               alt="service"
               className="service_card_img"
-              width="500px"
-              height="150px"
+              // width="500px"
+              // height="150px"
             />
             <div>
               <div>
@@ -113,12 +109,11 @@ const ServiceCard = () => {
         <Reveal delay={0.1} duration={0.6}>
           <div className="service__card">
             <LazyLoadImage
-              effect="blur"
               src="assets/mezzanine.jpg"
               alt="service"
               className="service_card_img"
-              width="500px"
-              height="150px"
+              // width="500px"
+              // height="150px"
             />
             <div>
               <div>

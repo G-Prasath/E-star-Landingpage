@@ -5,6 +5,7 @@ import "./Team.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Reveal from "../Reveal";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Team = () => {
   var settings = {
@@ -63,7 +64,7 @@ const Team = () => {
             {/* -------- card one ---------- */}
             <div className="team-cart">
               <div className="img-box">
-                <img src="/assets/jayaraman.jpg" alt="" />
+                <LazyLoadImage src="/assets/jayaraman.jpg" alt="" />
               </div>
               <div
                 style={{
@@ -90,7 +91,7 @@ const Team = () => {
             {/* ---------- Card Two -------  */}
             <div className="team-cart">
               <div className="img-box">
-                <img src="/assets/muniyandi.jpg" alt="" />
+                <LazyLoadImage src="/assets/muniyandi.jpg" alt="" />
               </div>
               <div
                 style={{
@@ -116,7 +117,7 @@ const Team = () => {
             {/* ---------- Card Three -------  */}
             <div className="team-cart">
               <div className="img-box">
-                <img src="/assets/ramasamy.png" alt="" />
+                <LazyLoadImage src="/assets/ramasamy.png" alt="" />
               </div>
               <div
                 style={{
@@ -138,53 +139,53 @@ const Team = () => {
             </div>
           </Reveal>
 
-            {/* ---------- Card Four -------  */}
-            <div className="team-cart">
-              <div className="img-box">
-                <img src="/assets/sundharam.jpg" alt="" />
+          {/* ---------- Card Four -------  */}
+          <div className="team-cart">
+            <div className="img-box">
+              <LazyLoadImage src="/assets/sundharam.jpg" alt="" />
+            </div>
+            <div
+              style={{
+                boxShadow: "5px 5px 20px rgba(0, 0, 0, 0.2)",
+                borderRadius: "5px",
+              }}
+            >
+              <div className="name-box">
+                <h6>Mr. M.Sundarm</h6>
+                <p>Principal Consultant - Projects</p>
               </div>
-              <div
-                style={{
-                  boxShadow: "5px 5px 20px rgba(0, 0, 0, 0.2)",
-                  borderRadius: "5px",
-                }}
-              >
-                <div className="name-box">
-                  <h6>Mr. M.Sundarm</h6>
-                  <p>Principal Consultant - Projects</p>
-                </div>
-                <div className="disc-box">
-                  <p>
-                    A Mechanical Engineer with more than 16+ years of expertise
-                    in Engineering Project & Product Management.
-                  </p>
-                </div>
+              <div className="disc-box">
+                <p>
+                  A Mechanical Engineer with more than 16+ years of expertise in
+                  Engineering Project & Product Management.
+                </p>
               </div>
             </div>
+          </div>
 
-            {/* ---------- Card Five -------  */}
-            <div className="team-cart">
-              <div className="img-box">
-                <img src="/assets/raman.jpg" alt="" />
+          {/* ---------- Card Five -------  */}
+          <div className="team-cart">
+            <div className="img-box">
+              <LazyLoadImage src="/assets/raman.jpg" alt="" />
+            </div>
+            <div
+              style={{
+                boxShadow: "5px 5px 20px rgba(0, 0, 0, 0.2)",
+                borderRadius: "5px",
+              }}
+            >
+              <div className="name-box">
+                <h6>Mr. S. Raman</h6>
+                <p>Sr. Piping Consultant</p>
               </div>
-              <div
-                style={{
-                  boxShadow: "5px 5px 20px rgba(0, 0, 0, 0.2)",
-                  borderRadius: "5px",
-                }}
-              >
-                <div className="name-box">
-                  <h6>Mr. S. Raman</h6>
-                  <p>Sr. Piping Consultant</p>
-                </div>
-                <div className="disc-box">
-                  <p>
-                    A mechanical engineer having more than 35+ Years of
-                    Experience in Design of piping systems - Power & Process.
-                  </p>
-                </div>
+              <div className="disc-box">
+                <p>
+                  A mechanical engineer having more than 35+ Years of Experience
+                  in Design of piping systems - Power & Process.
+                </p>
               </div>
             </div>
+          </div>
         </Slider>
       </div>
     </>

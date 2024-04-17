@@ -22,13 +22,12 @@
 .service__card .service_card_img {
   max-width: 300px;
   border-radius: 5px;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-.service__card .service_card_img:hover{
+.service__card .service_card_img:hover {
   transform: scale(1.05);
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-
 
 .service__card > div {
   display: flex;
@@ -59,7 +58,8 @@
   }
 
   .service__card .service_card_img {
-    max-width: 200px;
+    max-width: 150px;
+    aspect-ratio: 1 / 1;
   }
 }
 

@@ -1,12 +1,13 @@
 .header {
   padding-top: 4rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/assets/header.jpg");
+    url("/assets/header.jpeg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
   aspect-ratio: 16 / 9;
+  margin-top: 50px;
 }
 
 nav {
@@ -85,7 +86,7 @@ nav {
 
 .booking {
   max-width: 400px;
-  margin: auto;
+  margin: 150px auto;
   padding: 1.5rem 1rem;
   display: grid;
   gap: 1.5rem;
@@ -156,7 +157,7 @@ nav {
 /* Navbar Media Query */
 @media (width > 768px) {
   nav {
-    padding: 1rem 2rem;
+    padding: 1.5rem 2rem;
     position: static;
     display: flex;
     align-items: center;

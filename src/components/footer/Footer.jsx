@@ -55,16 +55,16 @@ const Footer = () => {
           <h4>Quick Links</h4>
           <ul className="footer__links">
             <li>
-              <a href="#">Home</a>
+              <a href="#home">Home</a>
             </li>
             <li>
-              <a href="#">Flights</a>
+              <a href="#about">About</a>
             </li>
             <li>
-              <a href="#">Hotels</a>
+              <a href="#service">Services</a>
             </li>
             <li>
-              <a href="#">Cruise</a>
+              <a href="#projects">Projects</a>
             </li>
           </ul>
         </div>
@@ -72,19 +72,19 @@ const Footer = () => {
           <h4>Contact Us</h4>
           <ul className="footer__links">
             <li>
-              <a href="#">
+              <a href="tel:+91 9566000981">
                 <span>
                   <i className="ri-phone-fill"></i>
                 </span>{" "}
-                +91 9876543210
+                +91 9566000981
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="mailto:info@estar.in">
                 <span>
                   <i className="ri-record-mail-line"></i>
                 </span>{" "}
-                info@flytravels
+                info@estar.in
               </a>
             </li>
             <li>
@@ -92,21 +92,22 @@ const Footer = () => {
                 <span>
                   <i className="ri-map-pin-2-fill"></i>
                 </span>{" "}
-                New Delhi, India
+                26/2, Taylor's Estate II Street, Kodambakkam, Chennai-600024,
+                Tamilnadu, India
               </a>
             </li>
           </ul>
         </div>
-        <div className="footer__col">
+        {/* <div className="footer__col">
           <h4>Subscribe</h4>
           <form action="/">
             <input type="text" placeholder="Enter your email" />
             <button className="btn">Subscribe</button>
           </form>
-        </div>
+        </div> */}
       </div>
       <div className="footer__bar">
-        Copyright © 2023 Web Design Mastery. All rights reserved.
+        Copyright © 2024 E Start. All rights reserved.
       </div>
     </footer>
   );

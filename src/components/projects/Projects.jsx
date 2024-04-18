@@ -5,7 +5,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Projects = () => {
   return (
-    <section className="section__container service__container" id="service">
+    <section className="section__container service__container" id="projects">
       <Reveal delay={0.5} duration={0.5}>
         <h2 className="section__header">Our Projects</h2>
         <p className="section__description">

@@ -1,6 +1,7 @@
 /* Footer  */
 .footer {
   background-color: #fff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .footer__container {
@@ -25,15 +26,9 @@
 }
 
 .footer__socials a {
-  /* padding: 5px 10px; */
   border-radius: 100%;
   transition: 0.3s;
 }
-
-/* .footer__socials a:hover {
-  color: #000;
-  background-color: var(--primary-color);
-} */
 
 .footer__col h4 {
   margin-bottom: 2rem;
@@ -107,7 +102,7 @@
 
 @media (width > 768px) {
   .footer__container {
-    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    grid-template-columns: 2fr 1fr 1fr;
   }
 
   .footer__col:last-child {

@@ -44,7 +44,7 @@ const Team = () => {
   };
   return (
     <>
-      <section className="client" id="client">
+      <section className="client" id="team">
         <div className="section__container client__container">
           <Reveal duration={0.5} delay={0.6}>
             <h2 className="section__header">Our Teams</h2>

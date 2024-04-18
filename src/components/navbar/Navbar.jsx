@@ -35,16 +35,22 @@ const Navbar = () => {
             <a href="#home">Home</a>
           </li>
           <li>
-            <a href="#service">About</a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="#offer">Services</a>
+            <a href="#service">Services</a>
           </li>
           <li>
-            <a href="#client">Projects</a>
+            <a href="#projects">Projects</a>
           </li>
           <li>
-            <button className="btn">Get a Quote</button>
+            <a href="#team">Teams</a>
+          </li>
+          <li>
+            {/* <button className="btn" >Get a Quote</button> */}
+            <a href="#quote" className="btn" style={{ color: "#fff" }}>
+              Get a Quote
+            </a>
           </li>
         </ul>
       </nav>
@@ -59,7 +65,7 @@ const Navbar = () => {
         </Reveal>
 
         <Reveal delay={0.7} duration={0.5}>
-          <div className="booking">
+          <div className="booking" id="quote">
             <div id="booking-type">
               <div>Get a Free Quote</div>
             </div>

@@ -1,8 +1,57 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Form.css";
 import Reveal from "../Reveal";
 
 const Form = () => {
+  const [formData, setFormData] = useState({
+    username: "",
+    email: "",
+    phone: "",
+    service: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const [errors, setErrors] = useState({});
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const validationError = {};
+    if (!formData.username.trim()) {
+      validationError.username = "username is Required";
+    }
+
+    if (!formData.email.trim()) {
+      validationError.email = "Email is Required";
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      validationError.email = "Email is Invalide";
+    }
+
+    if (!formData.phone.trim()) {
+      validationError.phone = "Phone Number Required";
+    } else if (!/^\d{10}$/.test(formData.phone)) {
+      validationError.phone = "Phone Number is Invalide";
+    }
+    if (!formData.service) {
+      validationError.service = "Please choose a service";
+    }
+
+    setErrors(validationError);
+
+    if (Object.keys(validationError).length === 0) {
+      alert("Form Submited");
+    }
+  };
+
+  console.log(errors);
+
   return (
     <div className="footer_form">
       <Reveal delay={0.5} duration={0.5}>
@@ -17,13 +66,16 @@ const Form = () => {
           <img src="/assets/header.jpg" alt="" />
         </div>
         <div className="form_inputs_feilds">
-          <form action="/">
+          <form onSubmit={handleSubmit}>
             <div className="input-feilds">
               <input
                 type="text"
-                name="name"
+                name="username"
                 id="name"
                 placeholder="Enter Your Name *"
+                autoComplete="off"
+                onChange={handleChange}
+                // style={{${errors.username}}}
               />
             </div>
             <div className="input-feilds">
@@ -32,24 +84,28 @@ const Form = () => {
                 name="email"
                 id="email"
                 placeholder="Enater Your Email *"
+                autoComplete="off"
+                onChange={handleChange}
               />
             </div>
             <div className="input-feilds">
               <input
                 type="text"
-                name="name"
+                name="phone"
                 id="name"
                 placeholder="Enter Your Phone No * "
+                autoComplete="off"
+                onChange={handleChange}
               />
             </div>
             <div className="input-feilds">
               <div className="custom-select">
-                <select>
+                <select name="service" onChange={handleChange}>
                   <option>Choose Services</option>
-                  <option value="">GitHub</option>
-                  <option value="">Instagram</option>
-                  <option value="">Facebook</option>
-                  <option value="">LinkedIn</option>
+                  <option value="warehouse">Warehouse</option>
+                  <option value="manufacturing unit">Manufacturing Unit</option>
+                  <option value="auditourim">Auditourim</option>
+                  <option value="factory shed">Factory Shed</option>
                   <option value="">Twitter</option>
                   <option value="">Reddit</option>
                 </select>

@@ -58,10 +58,10 @@ const Navbar = () => {
       <div className="section__container header__container" id="home">
         <Reveal delay={0.25} duration={0.5}>
           <h1>No Matter Where You Are Going From, We Take You There</h1>
-          <p>
+          {/* <p>
             You do not have the right to remain silent. Let us know what it
             takes to challenge you
-          </p>
+          </p> */}
         </Reveal>
 
         <Reveal delay={0.7} duration={0.5}>

@@ -7,10 +7,10 @@ const ServiceCard = () => {
   return (
     <section className="section__container service__container" id="service">
       <Reveal delay={0.5} duration={0.5}>
-        <h2 className="section__header">Our Services</h2>
+        <h2 className="section__header">Explore Our Offerings</h2>
         <p className="section__description">
-          Embark on unforgettable journeys with our travel and tourism platform,
-          where wanderlust meets convenience.
+          Experience streamlined construction with our Pre-Engineered Building
+          Solutions.
         </p>
       </Reveal>
       <div className="service__grid">
@@ -27,10 +27,10 @@ const ServiceCard = () => {
               <div>
                 <h4>Warehouse</h4>
                 <p style={{ textAlign: "justify", lineHeight: "25px" }}>
-                  Immerse yourself in the allure of the open sea as you set sail
-                  on a meticulously crafted cruise experience. Lorem, ipsum
-                  dolor sit amet consectetur adipisicing elit. Cum, eaque!.
-                  Lorem ipsum dolor sit amet consectetur.
+                  Elevate your warehouse operations with our pre-engineered
+                  building services. Offering swift construction,
+                  cost-effectiveness, and adaptable designs to optimize your
+                  storage and logistics.
                 </p>
               </div>
             </div>
@@ -50,10 +50,9 @@ const ServiceCard = () => {
               <div>
                 <h4>Manufacturing Unit</h4>
                 <p style={{ textAlign: "justify", lineHeight: "25px" }}>
-                  Immerse yourself in the allure of the open sea as you set sail
-                  on a meticulously crafted cruise experience. Lorem, ipsum
-                  dolor sit amet consectetur adipisicing elit. Cum, eaque!.
-                  Lorem ipsum dolor sit amet consectetur.
+                  Transform your manufacturing space with our pre-engineered
+                  building solutions. Streamlined, versatile, and tailored for
+                  your production needs
                 </p>
               </div>
             </div>
@@ -73,10 +72,9 @@ const ServiceCard = () => {
               <div>
                 <h4>Auditourim</h4>
                 <p style={{ textAlign: "justify", lineHeight: "25px" }}>
-                  Immerse yourself in the allure of the open sea as you set sail
-                  on a meticulously crafted cruise experience. Lorem, ipsum
-                  dolor sit amet consectetur adipisicing elit. Cum, eaque!.
-                  Lorem ipsum dolor sit amet consectetur.
+                  Experience immersive events in our state-of-the-art
+                  auditourim. Versatile, tech-enabled spaces designed for
+                  seamless presentations and gatherings.
                 </p>
               </div>
             </div>
@@ -96,10 +94,9 @@ const ServiceCard = () => {
               <div>
                 <h4>Factory Shed</h4>
                 <p style={{ textAlign: "justify", lineHeight: "25px" }}>
-                  Immerse yourself in the allure of the open sea as you set sail
-                  on a meticulously crafted cruise experience. Lorem, ipsum
-                  dolor sit amet consectetur adipisicing elit. Cum, eaque!.
-                  Lorem ipsum dolor sit amet consectetur.
+                  Enhance your industrial operations with our robust factory
+                  shed solutions. Customizable, durable structures engineered
+                  for efficiency and productivity.
                 </p>
               </div>
             </div>
@@ -119,10 +116,9 @@ const ServiceCard = () => {
               <div>
                 <h4>Mezzanine Floor</h4>
                 <p style={{ textAlign: "justify", lineHeight: "25px" }}>
-                  Immerse yourself in the allure of the open sea as you set sail
-                  on a meticulously crafted cruise experience. Lorem, ipsum
-                  dolor sit amet consectetur adipisicing elit. Cum, eaque!.
-                  Lorem ipsum dolor sit amet consectetur.
+                  Maximize space utilization with our innovative mezzanine floor
+                  systems. Expand vertically for storage, offices, or additional
+                  workspaces, tailored to your needs.
                 </p>
               </div>
             </div>

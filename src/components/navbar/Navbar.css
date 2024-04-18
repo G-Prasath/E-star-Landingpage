@@ -7,7 +7,6 @@
   background-repeat: no-repeat;
   width: 100%;
   aspect-ratio: 16 / 9;
-  margin-top: 50px;
 }
 
 nav {
@@ -93,7 +92,6 @@ nav {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 2px;
   color: #fff;
-  font-weight: boldcly;
 }
 
 .booking__type {

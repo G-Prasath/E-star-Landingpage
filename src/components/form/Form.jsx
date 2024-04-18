@@ -25,7 +25,7 @@ const Form = () => {
 
     const validationError = {};
     if (!formData.username.trim()) {
-      validationError.username = "username is Required";
+      validationError.username = "Username is Required";
     }
 
     if (!formData.email.trim()) {
@@ -47,10 +47,13 @@ const Form = () => {
 
     if (Object.keys(validationError).length === 0) {
       alert("Form Submited");
+      formData.email = ""
+      formData.username = ""
+      formData.phone = ""
+      formData.service = ""
     }
   };
 
-  console.log(errors);
 
   return (
     <div className="footer_form">
@@ -63,7 +66,7 @@ const Form = () => {
       </Reveal>
       <div className="form_inputs">
         <div className="input_form_img">
-          <img src="/assets/header.jpg" alt="" />
+          <img src="/assets/header-1.jpg" alt="" />
         </div>
         <div className="form_inputs_feilds">
           <form onSubmit={handleSubmit}>
@@ -72,21 +75,30 @@ const Form = () => {
                 type="text"
                 name="username"
                 id="name"
+                value={formData.username}
                 placeholder="Enter Your Name *"
                 autoComplete="off"
                 onChange={handleChange}
-                // style={{${errors.username}}}
+                style={{ border: errors.username ? "1px solid red" : "" }}
               />
+              <p style={{ color: "red", fontSize: "13px" }}>
+                {errors.username && errors.username}
+              </p>
             </div>
             <div className="input-feilds">
               <input
                 type="email"
                 name="email"
                 id="email"
+                value={formData.email}
                 placeholder="Enater Your Email *"
                 autoComplete="off"
                 onChange={handleChange}
+                style={{ border: errors.email ? "1px solid red" : "" }}
               />
+              <p style={{ color: "red", fontSize: "13px" }}>
+                {errors.email && errors.email}
+              </p>
             </div>
             <div className="input-feilds">
               <input
@@ -96,18 +108,29 @@ const Form = () => {
                 placeholder="Enter Your Phone No * "
                 autoComplete="off"
                 onChange={handleChange}
+                value={formData.phone}
+                style={{ border: errors.phone ? "1px solid red" : "" }}
               />
+              <p style={{ color: "red", fontSize: "13px" }}>
+                {errors.phone && errors.phone}
+              </p>
             </div>
             <div className="input-feilds">
-              <div className="custom-select">
-                <select name="service" onChange={handleChange}>
+              <div
+                className="custom-select"
+                style={{ border: errors.service ? "1px solid red" : "" }}
+              >
+                <select
+                  name="service"
+                  onChange={handleChange}
+                  value={formData.service}
+                >
                   <option>Choose Services</option>
                   <option value="warehouse">Warehouse</option>
                   <option value="manufacturing unit">Manufacturing Unit</option>
                   <option value="auditourim">Auditourim</option>
                   <option value="factory shed">Factory Shed</option>
-                  <option value="">Twitter</option>
-                  <option value="">Reddit</option>
+                  <option value="mezzanine floor">Mezzanine Floor</option>
                 </select>
               </div>
             </div>

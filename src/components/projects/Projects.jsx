@@ -7,10 +7,10 @@ const Projects = () => {
   return (
     <section className="section__container service__container" id="projects">
       <Reveal delay={0.5} duration={0.5}>
-        <h2 className="section__header">Our Projects</h2>
+        <h2 className="section__header">Explore Our Portfolio</h2>
         <p className="section__description">
-          Embark on unforgettable journeys with our travel and tourism platform,
-          where wanderlust meets convenience.
+          Explore our diverse portfolio, showcasing our expertise and excellence
+          across various projects
         </p>
       </Reveal>
 

@@ -16,53 +16,77 @@ const About = () => {
       <div className="about__content">
         <Reveal delay={0.6} duration={0.5}>
           <h2 className="section__header">
-            Easy Way To Go To Your Next Station
+            Accelerate the growth of your aspirations effortlessly
           </h2>
           <p className="section__description">
-            Navigate the world effortlessly with our user-friendly platform,
-            connecting you to the finest destinations and accommodations.
+            Step into the future of construction with pre-engineered buildings:
+            Efficient, customizable, sustainable and rapid construction.
           </p>
         </Reveal>
 
-        <Reveal delay={.7} duration={0.5}>
+        <Reveal delay={0.7} duration={0.5}>
           <ul>
             <li>
               <span>
                 <SiTicktick width={20} color="#5484dd" />
               </span>
-              Easily find and compare transportation options, ensuring a
-              hassle-free journey to your next destination.
+              <p>
+                <span style={{ fontWeight: "600" }}>
+                  Time-saving construction
+                </span>
+                : Pre-engineered buildings are assembled quickly, reducing
+                project timelines significantly.
+              </p>
             </li>
             <li>
               <span>
                 <SiTicktick width={20} color="#5484dd" />
               </span>
-              Enjoy a straightforward and quick booking experience for flights,
-              trains, and other transportation modes, all in one place.
+              <p>
+                <span style={{ fontWeight: "600" }}>Cost-effective</span>:
+                Streamlined design and manufacturing processes result in lower
+                overall project costs.
+              </p>
             </li>
             <li>
               <span>
                 <SiTicktick width={20} color="#5484dd" />
               </span>
-              Navigate the world effortlessly with our user-friendly platform,
-              connecting you to the finest destinations and accommodations.
+              <p>
+                <span style={{ fontWeight: "600" }}>Structural integrity</span>:
+                Engineered for durability and reliability, ensuring long-term
+                safety and stability.
+              </p>
             </li>
             <li>
               <span>
                 <SiTicktick width={20} color="#5484dd" />
               </span>
-              Easily find and compare transportation options, ensuring a
-              hassle-free journey to your next destination.
+              <p>
+                <span style={{ fontWeight: "600" }}>Customizable</span>:
+                Tailored designs meet specific needs, offering flexibility for
+                various architectural requirements.
+              </p>
+            </li>
+            <li>
+              <span>
+                <SiTicktick width={20} color="#5484dd" />
+              </span>
+              <p>
+                <span style={{ fontWeight: "600" }}>Sustainable</span>:
+                Utilizing efficient materials and construction methods,
+                pre-engineered buildings minimize environmental impact.
+              </p>
             </li>
           </ul>
-        </Reveal> 
-        
+        </Reveal>
+
         <Reveal delay={0.7} duration={0.5}>
-        <div className="about__links">
-          <a href="#">
-            <button className="btn">Get More</button>
-          </a>
-        </div>
+          <div className="about__links">
+            <a href="#">
+              <button className="btn">Get More</button>
+            </a>
+          </div>
         </Reveal>
       </div>
     </section>

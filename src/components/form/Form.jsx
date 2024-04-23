@@ -20,7 +20,7 @@ const Form = () => {
 
   const [errors, setErrors] = useState({});
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     const validationError = {};
@@ -46,27 +46,45 @@ const Form = () => {
     setErrors(validationError);
 
     if (Object.keys(validationError).length === 0) {
-      alert("Form Submited");
-      formData.email = ""
-      formData.username = ""
-      formData.phone = ""
-      formData.service = ""
+      try {
+        const response = await fetch("/contact", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        });
+
+        // if (response.ok) {
+        //   console.log("Email sent successfully");
+        //   // Handle success (e.g., show a success message)
+        // } else {
+        //   console.error("Failed to send email");
+        //   // Handle failure
+        // }
+      } catch (error) {
+        console.error("Error sending email:", error);
+        // Handle error
+      }
+
+      formData.email = "";
+      formData.username = "";
+      formData.phone = "";
+      formData.service = "";
     }
   };
-
 
   return (
     <div className="footer_form">
       <Reveal delay={0.5} duration={0.5}>
         <h2 className="section__header">Let's Get in Touch</h2>
         <p className="section__description">
-          Embark on unforgettable journeys with our travel and tourism platform,
-          where wanderlust meets convenience.
+          Let's Connect and Explore How We Can Elevate Your Business Together.
         </p>
       </Reveal>
       <div className="form_inputs">
         <div className="input_form_img">
-          <img src="/assets/header-1.jpg" alt="" />
+          <img src="/assets/contact.png" alt="" />
         </div>
         <div className="form_inputs_feilds">
           <form onSubmit={handleSubmit}>
@@ -135,7 +153,9 @@ const Form = () => {
               </div>
             </div>
             <div className="input-feilds">
-              <button>Touch Here</button>
+              <a href="/contact" className="btn">
+                Touch Here
+              </a>
             </div>
           </form>
         </div>

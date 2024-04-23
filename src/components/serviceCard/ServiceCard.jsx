@@ -17,7 +17,7 @@ const ServiceCard = () => {
         <Reveal delay={0.6} duration={0.6}>
           <div className="service__card">
             <LazyLoadImage
-              src="assets/warehouse.jpg"
+              src="assets/warehouse.jpeg"
               alt="service"
               className="service_card_img"
               // width="500px"

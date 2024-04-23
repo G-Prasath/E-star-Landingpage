@@ -7,6 +7,63 @@ import Reveal from "../Reveal";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
+const [formData, setFormData] = useState({
+  username: "",
+  email: "",
+  phone: "",
+  service: "",
+});
+
+const handleChange = (e) => {
+  const { name, value } = e.target;
+  setFormData({
+    ...formData,
+    [name]: value,
+  });
+};
+
+const [errors, setErrors] = useState({});
+
+const handleSubmit = (e) => {
+  e.preventDefault();
+  console.log("Test");
+
+  const validationError = {};
+  if (!formData.username.trim()) {
+    validationError.username = "Username is Required";
+  }
+
+  if (!formData.email.trim()) {
+    validationError.email = "Email is Required";
+  } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+    validationError.email = "Email is Invalide";
+  }
+
+  if (!formData.phone.trim()) {
+    validationError.phone = "Phone Number Required";
+  } else if (!/^\d{10}$/.test(formData.phone)) {
+    validationError.phone = "Phone Number is Invalide";
+  }
+  if (!formData.service) {
+    validationError.service = "Please choose a service";
+  }
+
+  setErrors(validationError);
+
+  if (Object.keys(validationError).length === 0) {
+    alert("Form Submited");
+    formData.email = "";
+    formData.username = "";
+    formData.phone = "";
+    formData.service = "";
+  }
+};
+
+
+
+
+
+
   return (
     <header className="header">
       <nav>
@@ -69,23 +126,71 @@ const Navbar = () => {
             <div id="booking-type">
               <div>Get a Free Quote</div>
             </div>
-            <form action="/" className="booking__form">
+            <form onSubmit={handleSubmit} className="booking__form">
               <div className="booking__input">
                 <label htmlFor="arrival">Name</label>
-                <input type="text" placeholder="Enter Your Name" />
+                <input
+                  type="text"
+                  name="username"
+                  id="name"
+                  value={formData.username}
+                  placeholder="Enter Your Name *"
+                  autoComplete="off"
+                  onChange={handleChange}
+                  style={{ border: errors.username ? "1px solid red" : "" }}
+                />
               </div>
               <div className="booking__input">
                 <label htmlFor="departure">Email</label>
-                <input type="text" placeholder="Enter Your Email" />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  value={formData.email}
+                  placeholder="Enater Your Email *"
+                  autoComplete="off"
+                  onChange={handleChange}
+                  style={{ border: errors.email ? "1px solid red" : "" }}
+                />
               </div>
               <div className="booking__input">
                 <label htmlFor="date">Phone</label>
-                <input type="text" placeholder="Enter Your Phone" />
+                <input
+                  type="text"
+                  name="phone"
+                  id="name"
+                  placeholder="Enter Your Phone No * "
+                  autoComplete="off"
+                  onChange={handleChange}
+                  value={formData.phone}
+                  style={{ border: errors.phone ? "1px solid red" : "" }}
+                />
+              </div>
+              <div className="booking__input">
+                <div
+                  className="custom-select"
+                  style={{ border: errors.service ? "1px solid red" : "" }}
+                >
+                  <select
+                    name="service"
+                    onChange={handleChange}
+                    value={formData.service}
+                  >
+                    <option>Choose Services</option>
+                    <option value="warehouse">Warehouse</option>
+                    <option value="manufacturing unit">
+                      Manufacturing Unit
+                    </option>
+                    <option value="auditourim">Auditourim</option>
+                    <option value="factory shed">Factory Shed</option>
+                    <option value="mezzanine floor">Mezzanine Floor</option>
+                  </select>
+                </div>
+              </div>
+              <div className="booking__btn">
+                <button className="btn">Send Now</button>
               </div>
             </form>
-            <div className="booking__btn">
-              <button className="btn">Send Now</button>
-            </div>
           </div>
         </Reveal>
       </div>

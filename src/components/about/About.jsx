@@ -4,13 +4,12 @@ import { SiTicktick } from "react-icons/si";
 import Reveal from "../Reveal";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
-
 const About = () => {
   return (
     <section className="section__container about__container" id="about">
       <div className="about__image">
         <Reveal delay={0.5} duration={0.5}>
-          <LazyLoadImage effect="blur" src="assets/about.jpg" alt="about" />
+          <LazyLoadImage effect="blur" src="assets/about.png" alt="about" />
         </Reveal>
       </div>
       <div className="about__content">
@@ -83,8 +82,8 @@ const About = () => {
 
         <Reveal delay={0.7} duration={0.5}>
           <div className="about__links">
-            <a href="#">
-              <button className="btn">Get More</button>
+            <a href="tel:+917418655555">
+              <button className="btn">Call Now</button>
             </a>
           </div>
         </Reveal>

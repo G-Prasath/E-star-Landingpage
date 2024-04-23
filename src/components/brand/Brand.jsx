@@ -20,10 +20,10 @@ const Brand = () => {
   return (
     <section className="section__container service__container" id="service">
       <Reveal delay={0.5} duration={0.5}>
-        <h2 className="section__header">Our Clinets</h2>
+        <h2 className="section__header">Our Clients</h2>
         <p className="section__description">
-          Embark on unforgettable journeys with our travel and tourism platform,
-          where wanderlust meets convenience.
+          Empowering Our Clients with Tailored Solutions for their Success in
+          Every Venture.
         </p>
       </Reveal>
 

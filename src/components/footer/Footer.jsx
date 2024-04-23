@@ -18,9 +18,9 @@ const Footer = () => {
             </a>
           </div>
           <p className="footer_para">
-            Explore the world with ease and excitement through our comprehensive
-            travel platform. Your journey begins here, where seamless planning
-            meets unforgettable experiences.
+            From concept to completion, we're your pre-engineered solutions
+            partner. Our expertise ensures efficiency, quality, and timely
+            project delivery.
           </p>
           <ul className="footer__socials">
             <li>

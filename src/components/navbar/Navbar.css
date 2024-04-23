@@ -151,6 +151,57 @@ nav {
   text-align: right;
 }
 
+/* --------------- Drop Down --------------  */
+.custom-select {
+  min-width: 350px;
+  position: relative;
+  border-radius: 5px;
+  border: 2px solid #112b5a;
+}
+
+select {
+  appearance: none;
+  /*  safari  */
+  -webkit-appearance: none;
+  /*  other styles for aesthetics */
+  width: 100%;
+  font-size: 16px;
+  padding: 0.675em 6em 0.675em 1em;
+  background-color: #fff;
+  border-radius: 0.25rem;
+  color: #000;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+select option {
+  font-size: 16px;
+  margin: 10px 0px;
+}
+
+.custom-select::before,
+.custom-select::after {
+  --size: 0.3rem;
+  content: "";
+  position: absolute;
+  right: 1rem;
+  pointer-events: none;
+}
+
+.custom-select::before {
+  border-left: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  border-bottom: var(--size) solid black;
+  top: 40%;
+}
+
+.custom-select::after {
+  border-left: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  border-top: var(--size) solid black;
+  top: 55%;
+}
+
 /* ----------------  */
 /* Navbar Media Query */
 @media (width > 768px) {
@@ -188,12 +239,12 @@ nav {
   }
 
   .header__container h1 {
-  margin-bottom: 1rem;
-  font-size: 3rem;
-  font-weight: 700;
-  color: #fff;
-  text-align: center;
-}
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+  }
 
   .booking {
     max-width: 100%;

@@ -3,6 +3,8 @@ import "./Form.css";
 import Reveal from "../Reveal";
 
 const Form = () => {
+  const [submitting, setSubmitting] = useState(false);
+
   const [formData, setFormData] = useState({
     username: "",
     email: "",
@@ -47,30 +49,35 @@ const Form = () => {
 
     if (Object.keys(validationError).length === 0) {
       try {
-        const response = await fetch("/contact", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        });
+        setSubmitting(true);
+        const response = await fetch(
+          "https://email-server-aoiw.onrender.com/send-email",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData),
+          }
+        );
 
-        // if (response.ok) {
-        //   console.log("Email sent successfully");
-        //   // Handle success (e.g., show a success message)
-        // } else {
-        //   console.error("Failed to send email");
-        //   // Handle failure
-        // }
+        console.log(response);
+
+        if (response.ok) {
+          setFormData({
+            username: "",
+            email: "",
+            phone: "",
+            service: "",
+          });
+        } else {
+          console.error("Failed to send email");
+        }
       } catch (error) {
         console.error("Error sending email:", error);
-        // Handle error
+      } finally {
+        setSubmitting(false); // Set loading state to false regardless of success or failure
       }
-
-      formData.email = "";
-      formData.username = "";
-      formData.phone = "";
-      formData.service = "";
     }
   };
 
@@ -153,9 +160,9 @@ const Form = () => {
               </div>
             </div>
             <div className="input-feilds">
-              <a href="/contact" className="btn">
-                Touch Here
-              </a>
+              <button className="btn" disabled={submitting}>
+                {submitting ? "Sending..." : "Send Now"}
+              </button>
             </div>
           </form>
         </div>

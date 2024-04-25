@@ -10,17 +10,19 @@ const Brands = lazy(() => import("./components/brand/Brand"));
 const Form = lazy(() => import("./components/form/Form"));
 const Footer = lazy(() => import('./components/footer/Footer'));
 
+
+
 const App = () => {
   return (
     <div>
-      <Suspense fallback={<div/>}>
+      <Suspense fallback={<div />}>
         <Navbar />
         <About />
         <ServiceCard />
-        <Projects/>
+        <Projects />
         <Team />
         <Brands />
-        <Form/>
+        <Form />
         <Footer />
       </Suspense>
     </div>
